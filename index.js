@@ -54,16 +54,35 @@ target.parentNode.classList.toggle('todo__done')
 document.getElementById('start').addEventListener('click',function(){
     // timestart();
     // run();
-    alert('123')
-    window.setInterval(run,1000);
+    if (isStart) {
+        $("#start-icon").toggleClass('far fa-stop-circle', false); // 刪除 暫停classname
+        $("#start-icon").toggleClass('fa-play-circle',true); // 新增 撥放classname
+        $("#start-icon").toggleClass('far',true); // 新增 定位樣式classname
+
+        window.clearInterval(intervalId); 
+    } else {
+        $("#start-icon").toggleClass('far fa-play-circle',false);
+        $("#start-icon").toggleClass('fa-stop-circle', true);
+        $("#start-icon").toggleClass('far',true);
+        intervalId = window.setInterval(run,1000);
+        console.log(intervalId);    
+    }
+
+    isStart = !isStart;
+
 
 })
 
-function timestart(){
-
-}
 
 function run(){
     var s = document.getElementById("dd");
+    if(s.innerHTML == 1 ){
+        window.clearInterval(intervalId);
+        $("#start-icon").toggleClass('far fa-stop-circle', false);
+        $("#start-icon").toggleClass('fa-play-circle',true); // 新增 撥放classname
+        $("#start-icon").toggleClass('far',true); // 新增 定位樣式classname
+    }
     s.innerHTML =s.innerHTML-1;
 }
+var intervalId  ;
+var isStart = false;
