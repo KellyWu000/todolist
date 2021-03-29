@@ -1,0 +1,171 @@
+body{
+    background-image: url(https://images.pexels.com/photos/4087177/pexels-photo-4087177.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    
+  
+    
+}
+
+
+
+.wrapper{
+    width: 1200px;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.container{
+    width: 45%;
+        height: 500px;
+        text-align: center;
+        background-color:rgba(238, 237, 237, 0.8);
+        border-radius: 25px;
+        overflow: auto;
+
+    
+
+
+ 
+}
+ h1{
+ color:rgb(100, 93, 93); 
+ margin-top: 40px;
+ padding: 15px;
+ font-size: 45px;
+
+    }
+.container input[type="text"]{
+    border-radius: 200px 200px 200px 200px;
+    border: 1px solid rgb(201, 195, 195);
+    outline: none;
+    padding:4px 8px;
+    width: 300px;
+    height: 30px;
+
+    
+   
+}
+.btn-new{
+width: 35px;
+height: 35px;
+padding: 0px;
+margin-left: 25px;
+border-radius: 30px;
+border: 1px solid rgb(201, 195, 195);
+outline: none;
+background-color:white;
+}
+
+.btn-new .fas{
+   color: rgb(128, 122, 122);
+   font-size: 16px;
+   
+}
+.todo-hr{
+width: 450px;
+height: 1px;
+background-color: rgb(167, 164, 164);
+margin: 20px 20px;
+}
+
+.todo-list{
+   margin: 20px 55px;
+   list-style: none;
+}
+
+.todo-title{
+display: flex;
+margin: 20px;
+
+}
+.todo{
+position: relative;
+}
+input[type="checkbox"]{
+   width: 19px;
+   height: 19px;
+   padding: 6px;
+}
+input:checked + span{
+text-decoration: line-through;
+color: rgb(73, 73, 73);
+}
+.todo-title span{
+    font-size: 22px;
+    margin-left: 8px;
+}
+.btn-delete{
+    width: 33px;
+    height: 33px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid whitesmoke;
+    background-color:whitesmoke;
+    position: absolute;
+    top: 0px;
+    right: 25px;
+}
+.btn-delete .fas{
+    color: rgb(128, 122, 122);
+   font-size: 16px;
+}
+
+.timer{
+    width: 45%;
+    height: 500px;
+    text-align: center;
+    background-color:rgba(121, 129, 125, 0.85);
+    border-radius: 25px;
+    position: relative;
+}
+
+.timer .icon{
+position: absolute;
+left: 100px;
+top:50px;
+}
+
+.circle{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: tomato;
+    position: absolute;
+    left: 100px;
+    top: 90px;
+    
+}
+
+.icon .far{
+    position: absolute;
+    z-index: 1;
+    font-size: 70px;
+    color: rgb(32, 28, 28);
+    top: 135px;
+    left: 145px;
+}
+
+
+#clockdiv{
+    font-size: 55px;
+    font-family: 'Train One', cursive;
+    position: absolute;
+    top:320px;
+    left: 195px;
+
+}
+
+.icon .fas{
+    position: absolute;
+    z-index: 1;
+    font-size: 60px;
+    color: rgb(32, 28, 28);
+    top: 140px;
+    left: 154px;
+    opacity: 0;
+}
