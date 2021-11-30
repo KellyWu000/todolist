@@ -98,6 +98,10 @@ input:checked + span {
   font-size: 16px;
 }
 
+
+.hide{
+  display: none;
+}
 .timer {
   width: 45%;
   height: 500px;

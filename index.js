@@ -110,7 +110,7 @@ document.getElementById("start").addEventListener("click", function () {
 
     window.clearInterval(intervalId);
   } else {
-    $("#start-icon").toggleClass("far fa-play-circle");
+    // $("#start-icon").toggleClass("far fa-play-circle");
     $("#start-icon").toggleClass("fa-stop-circle", true);
     $("#start-icon").toggleClass("far", true);
 
